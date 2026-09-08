@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://3koc2ip7r0og"]
+
+[ext_resource type="Texture2D" uid="uid://bugqpis5k6sv" path="res://icon.svg" id="1_68ljo"]
+[ext_resource type="Script" uid="uid://cr2agbkqejo2x" path="res://Scenes/title_scene.gd" id="1_b6ftn"]
+
+[node name="TitleScreen" type="Node2D" unique_id=1671331503]
+script = ExtResource("1_b6ftn")
+
+[node name="Background" type="TextureRect" parent="." unique_id=899508686]
+offset_right = 1159.0
+offset_bottom = 653.0
+texture = ExtResource("1_68ljo")
+
+[node name="Title" type="RichTextLabel" parent="." unique_id=2010296371]
+clip_contents = false
+offset_left = 110.0
+offset_top = 49.0
+offset_right = 1056.0
+offset_bottom = 371.0
+theme_override_constants/outline_size = 40
+theme_override_font_sizes/normal_font_size = 108
+text = "Vacation Vexation"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1017469172]
+offset_left = 436.0
+offset_top = 207.0
+offset_right = 721.0
+offset_bottom = 572.0
+
+[node name="Start" type="Button" parent="VBoxContainer" unique_id=1834322684]
+layout_mode = 2
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "Start Game"
+
+[node name="Settings" type="Button" parent="VBoxContainer" unique_id=457019482]
+layout_mode = 2
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "Settings"
+
+[node name="Quit" type="Button" parent="VBoxContainer" unique_id=1424688582]
+layout_mode = 2
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
