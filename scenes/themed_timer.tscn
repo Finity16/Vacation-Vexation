@@ -6,5 +6,9 @@
 script = ExtResource("1_d1dk1")
 
 [node name="timer" type="RichTextLabel" parent="." unique_id=227926203]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_top = -3.0
+offset_right = 224.0
+offset_bottom = 154.0
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true

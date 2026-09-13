@@ -11,6 +11,9 @@ extends Node2D
 var time
 
 func _ready() -> void:
+	if Global.lives <= 0:
+		get_tree().change_scene_to_file("res://scenes/lose_screen.tscn")
+		return
 	await Timer(5.0)
 	print(Global.minigames_done)
 	if Global.minigames_done < 3:

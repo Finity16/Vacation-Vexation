@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://vgwsq1pfnboe"]
+
+[ext_resource type="Texture2D" uid="uid://bugqpis5k6sv" path="res://icon.svg" id="1_1n1m7"]
+[ext_resource type="Script" uid="uid://0kd0lo53tjve" path="res://scenes/reset_button.gd" id="2_73mov"]
+
+[node name="lose_screen" type="Node2D" unique_id=973755473]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1701321585]
+offset_right = 1143.0
+offset_bottom = 649.0
+texture = ExtResource("1_1n1m7")
+
+[node name="Reset Button" type="TextureButton" parent="." unique_id=1398407810]
+offset_left = 894.0
+offset_top = 438.0
+offset_right = 1022.0
+offset_bottom = 566.0
+texture_normal = ExtResource("1_1n1m7")
+script = ExtResource("2_73mov")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1366924847]
+offset_left = 676.0
+offset_top = 55.0
+offset_right = 1159.0
+offset_bottom = 285.0
+theme_override_constants/outline_size = 24
+theme_override_font_sizes/normal_font_size = 80
+bbcode_enabled = true
+text = "[wave amp=50.0 freq=5.0 connected=1]You lost! Try again?[/wave]"
+
+[connection signal="pressed" from="Reset Button" to="Reset Button" method="_on_pressed"]

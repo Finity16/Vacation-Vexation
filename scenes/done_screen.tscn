@@ -11,11 +11,20 @@ offset_bottom = 647.0
 texture = ExtResource("1_uqm27")
 
 [node name="Reset Button" type="TextureButton" parent="." unique_id=828630806]
-offset_left = 489.0
-offset_top = 261.0
-offset_right = 617.0
-offset_bottom = 389.0
+offset_left = 909.0
+offset_top = 441.0
+offset_right = 1037.0
+offset_bottom = 569.0
 texture_normal = ExtResource("1_uqm27")
 script = ExtResource("2_k66lo")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1089973122]
+offset_left = 682.0
+offset_top = 64.0
+offset_right = 1247.0
+offset_bottom = 300.0
+theme_override_font_sizes/normal_font_size = 80
+bbcode_enabled = true
+text = "[rainbow freq=1.0 sat=0.8 val=0.8 speed=1.0]You won! Replay?[/rainbow]"
 
 [connection signal="pressed" from="Reset Button" to="Reset Button" method="_on_pressed"]
