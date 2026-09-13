@@ -140,14 +140,14 @@ shape = SubResource("RectangleShape2D_chyva")
 
 [node name="ColorRect" type="ColorRect" parent="Platform2" unique_id=1855522053]
 offset_left = 611.0
-offset_top = 392.0
+offset_top = 403.0
 offset_right = 1111.0
-offset_bottom = 442.0
+offset_bottom = 453.0
 color = Color(0.20392157, 0.5529412, 1, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2" unique_id=1211398777]
-position = Vector2(859.2578, 418)
+position = Vector2(859.2578, 431)
 shape = SubResource("RectangleShape2D_11mgy")
 
 [node name="Platform3" type="StaticBody2D" parent="." unique_id=374032287]
@@ -259,3 +259,8 @@ position = Vector2(873, 68)
 shape = SubResource("CircleShape2D_hwlf6")
 
 [node name="ThemedTimer" parent="." unique_id=646397524 instance=ExtResource("5_fa05o")]
+
+[connection signal="garlic_collected" from="Garlic" to="." method="_on_garlic_garlic_collected"]
+[connection signal="garlic_collected" from="Garlic" to="." method="garlic_collect"]
+[connection signal="garlic_collected" from="Garlic2" to="." method="garlic_collect"]
+[connection signal="garlic_collected" from="Garlic3" to="." method="garlic_collect"]

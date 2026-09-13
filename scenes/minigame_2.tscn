@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://w57l05ovbf8s"]
+
+[ext_resource type="Script" uid="uid://cbcfsvq4ax6x4" path="res://scenes/minigame_2.gd" id="1_ksu6r"]
+[ext_resource type="Texture2D" uid="uid://bugqpis5k6sv" path="res://icon.svg" id="1_xdwh2"]
+[ext_resource type="Script" uid="uid://bwqa6bd2la0x7" path="res://scenes/button_1.gd" id="2_uiylj"]
+[ext_resource type="PackedScene" uid="uid://wc1i70hbv2iq" path="res://scenes/themed_timer.tscn" id="3_ksu6r"]
+
+[node name="Minigame_2" type="Node2D" unique_id=1852119278]
+script = ExtResource("1_ksu6r")
+
+[node name="ScrollingBackground" type="Parallax2D" parent="." unique_id=1958809935]
+repeat_size = Vector2(1000, 0)
+autoscroll = Vector2(100, 0)
+
+[node name="Background" type="TextureRect" parent="ScrollingBackground" unique_id=1826212274]
+offset_left = -2.0
+offset_top = 10.0
+offset_right = 1148.0
+offset_bottom = 654.0
+texture = ExtResource("1_xdwh2")
+
+[node name="Button_1" type="TextureButton" parent="." unique_id=1656399403]
+offset_left = 486.0
+offset_top = 269.0
+offset_right = 614.0
+offset_bottom = 397.0
+texture_normal = ExtResource("1_xdwh2")
+script = ExtResource("2_uiylj")
+
+[node name="ThemedTimer" parent="." unique_id=646397524 instance=ExtResource("3_ksu6r")]
+position = Vector2(136, 106)
