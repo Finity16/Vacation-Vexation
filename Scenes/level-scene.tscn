@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ctcd23mb5rxhw"]
 
-[ext_resource type="Script" uid="uid://bpc57eholanwe" path="res://Scenes/timer_screen.gd" id="1_bilkp"]
+[ext_resource type="Script" uid="uid://bpc57eholanwe" path="res://scenes/timer_screen.gd" id="1_bilkp"]
 [ext_resource type="Texture2D" uid="uid://bugqpis5k6sv" path="res://icon.svg" id="1_jejcd"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bilkp"]

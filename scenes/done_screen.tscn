@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://ch3tcwkwg8qav"]
+
+[ext_resource type="Texture2D" uid="uid://bugqpis5k6sv" path="res://icon.svg" id="1_uqm27"]
+[ext_resource type="Script" uid="uid://0kd0lo53tjve" path="res://scenes/reset_button.gd" id="2_k66lo"]
+
+[node name="done-screen" type="Node2D" unique_id=352455259]
+
+[node name="Background" type="TextureRect" parent="." unique_id=1566775879]
+offset_right = 1148.0
+offset_bottom = 647.0
+texture = ExtResource("1_uqm27")
+
+[node name="Reset Button" type="TextureButton" parent="." unique_id=828630806]
+offset_left = 489.0
+offset_top = 261.0
+offset_right = 617.0
+offset_bottom = 389.0
+texture_normal = ExtResource("1_uqm27")
+script = ExtResource("2_k66lo")
+
+[connection signal="pressed" from="Reset Button" to="Reset Button" method="_on_pressed"]

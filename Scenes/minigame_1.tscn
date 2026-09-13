@@ -116,10 +116,10 @@ repeat_size = Vector2(1000, 0)
 autoscroll = Vector2(100, 0)
 
 [node name="Background" type="TextureRect" parent="ScrollingBackground" unique_id=1675289524]
-offset_left = -74.0
-offset_top = -64.0
-offset_right = 1076.0
-offset_bottom = 580.0
+offset_left = -77.0
+offset_top = -69.0
+offset_right = 1073.0
+offset_bottom = 575.0
 texture = ExtResource("2_fa05o")
 
 [node name="Platform1" type="StaticBody2D" parent="." unique_id=1673103575]
