@@ -1,9 +1,12 @@
 [gd_scene format=3 uid="uid://w57l05ovbf8s"]
 
 [ext_resource type="Script" uid="uid://cbcfsvq4ax6x4" path="res://scenes/minigame_2.gd" id="1_ksu6r"]
-[ext_resource type="Texture2D" uid="uid://bugqpis5k6sv" path="res://icon.svg" id="1_xdwh2"]
+[ext_resource type="Texture2D" uid="uid://bciq023kjwmcj" path="res://sprites/PolkaDotBackground.png" id="2_c3ytc"]
 [ext_resource type="Script" uid="uid://bwqa6bd2la0x7" path="res://scenes/button_1.gd" id="2_uiylj"]
+[ext_resource type="Texture2D" uid="uid://cwynnaqnjn3n6" path="res://sprites/Shirt.png" id="3_eachr"]
 [ext_resource type="PackedScene" uid="uid://wc1i70hbv2iq" path="res://scenes/themed_timer.tscn" id="3_ksu6r"]
+[ext_resource type="Texture2D" uid="uid://bfnol1fjue3o0" path="res://sprites/ShirtPants.png" id="5_eachr"]
+[ext_resource type="Texture2D" uid="uid://dyhy61q5w087m" path="res://sprites/Pants.png" id="6_6tcq3"]
 
 [node name="Minigame_2" type="Node2D" unique_id=1852119278]
 script = ExtResource("1_ksu6r")
@@ -13,16 +16,21 @@ repeat_size = Vector2(1000, 0)
 autoscroll = Vector2(100, 0)
 
 [node name="Background" type="TextureRect" parent="ScrollingBackground" unique_id=1826212274]
-offset_right = 1150.0
-offset_bottom = 644.0
-texture = ExtResource("1_xdwh2")
+offset_left = 1.0
+offset_top = 7.0
+offset_right = 1162.0
+offset_bottom = 643.0
+texture = ExtResource("2_c3ytc")
+expand_mode = 1
 
 [node name="Button_1" type="TextureButton" parent="." unique_id=1656399403]
 offset_left = 599.0
 offset_top = 327.0
-offset_right = 727.0
-offset_bottom = 455.0
-texture_normal = ExtResource("1_xdwh2")
+offset_right = 1049.0
+offset_bottom = 777.0
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("3_eachr")
+stretch_mode = 5
 script = ExtResource("2_uiylj")
 
 [node name="Button_2" type="TextureButton" parent="." unique_id=238604266]
@@ -30,7 +38,8 @@ offset_left = 287.0
 offset_top = 442.0
 offset_right = 415.0
 offset_bottom = 570.0
-texture_normal = ExtResource("1_xdwh2")
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("5_eachr")
 script = ExtResource("2_uiylj")
 
 [node name="Button_3" type="TextureButton" parent="." unique_id=2077872436]
@@ -38,7 +47,8 @@ offset_left = 164.0
 offset_top = 188.0
 offset_right = 292.0
 offset_bottom = 316.0
-texture_normal = ExtResource("1_xdwh2")
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("6_6tcq3")
 script = ExtResource("2_uiylj")
 
 [node name="Button_4" type="TextureButton" parent="." unique_id=2011449909]
@@ -46,7 +56,8 @@ offset_left = 781.0
 offset_top = 144.0
 offset_right = 909.0
 offset_bottom = 272.0
-texture_normal = ExtResource("1_xdwh2")
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("5_eachr")
 script = ExtResource("2_uiylj")
 
 [node name="ThemedTimer" parent="." unique_id=646397524 instance=ExtResource("3_ksu6r")]

@@ -1,21 +1,24 @@
 [gd_scene format=3 uid="uid://vgwsq1pfnboe"]
 
-[ext_resource type="Texture2D" uid="uid://bugqpis5k6sv" path="res://icon.svg" id="1_1n1m7"]
+[ext_resource type="Texture2D" uid="uid://bex16f82fm743" path="res://sprites/LoseScreen.png" id="1_73mov"]
 [ext_resource type="Script" uid="uid://0kd0lo53tjve" path="res://scenes/reset_button.gd" id="2_73mov"]
+[ext_resource type="Texture2D" uid="uid://bpb8sirowprn3" path="res://sprites/ResetButton.png" id="2_lytqm"]
 
 [node name="lose_screen" type="Node2D" unique_id=973755473]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1701321585]
 offset_right = 1143.0
 offset_bottom = 649.0
-texture = ExtResource("1_1n1m7")
+texture = ExtResource("1_73mov")
+expand_mode = 1
 
 [node name="Reset Button" type="TextureButton" parent="." unique_id=1398407810]
 offset_left = 894.0
 offset_top = 438.0
 offset_right = 1022.0
 offset_bottom = 566.0
-texture_normal = ExtResource("1_1n1m7")
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("2_lytqm")
 script = ExtResource("2_73mov")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1366924847]
